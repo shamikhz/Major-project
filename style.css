@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    background-color: aquamarine;
+    line-height: 75px;
+    padding: 0 100px;
+    position: fixed;
+    z-index: 1; 
+}
+.nav .logo{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+}
+.nav ul{
+
+   float: right;
+}
+.nav ul li{
+      display: inline-block;
+      list-style: none;
+      position: relative;
+
+}
+.nav ul li a{
+    color: rgb(15, 14, 14);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 32px;
+    transition: all 0.3s;
+    
+}
+.nav ul li a:hover{
+          color: rgba(189, 31, 58, 0.751);
+}
+.dropdown_menu{
+  display: none;
+}
+.nav ul li:hover .dropdown_menu{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 80%;
+   background-color: aquamarine;
+}
+.nav ul li:hover .dropdown_menu ul{
+   display: block;
+  margin: 10px;
+}
+.nav ul li:hover.dropdown_menu ul li{
+  width: 150px;
+  padding: 10px;
+
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin:0;
+}
+.mySlides {
+    display: none
+}
+img { 
+    width: 1520px;
+    height: 600px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 90%;
+}
+/* Caption text */
+.text {
+  color: #4d519e;
+  font-family: 'Roboto Mono', monospace;
+
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 250px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+@media only screen and (max-width: 500px) {
+  .prev, .next,.text {font-size: 14px}
+}
+
+
+
+.booking .book-form{
+  padding:10px;
+  background-image: url(egypt.jpg);
+   box-sizing: border-box;
+   border-radius: 20px;
+}
+
+.booking .book-form .flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap:0.2rem;
+  padding: 20px;
+}
+
+.booking .book-form .flex .inputBox{
+  flex:1 1 41rem;
+  padding: 20px;
+}
+
+.booking .book-form .flex .inputBox input{
+  width: 60%;
+  padding:1rem 1rem;
+  font-size:1rem;
+  color:var(--light-black);
+  text-transform: none;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+}
+
+.booking .book-form .flex .inputBox input:focus{
+  background: var(--black);
+  color:var(--white);
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder{
+  color:var(--light-white);
+}
+
+.booking .book-form .flex .inputBox span{
+  font-size: 1.5rem;
+  color:var(--light-black);
+}
+
+.booking .book-form .btn{
+  margin-top: 2rem;
+}
+.btn{
+  display: inline-block;
+    margin-top: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: -125px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+    .btn:hover{
+    background-color: rgb(244, 171, 171);
+  box-shadow:5px 5px 10px 5px rgb(56, 47, 47);
+
+}
+.heading-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.services .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 1.5rem;
+}
+
+.services .box-container .box{
+  padding:0.5rem 0rem;
+  text-align: center;
+  background: rgb(186, 238, 221);
+  cursor: pointer;
+}
+
+.services .box-container .box:hover{
+  background: rgb(215, 63, 63);
+  box-shadow:5px 5px 10px 5px rgb(56, 47, 47);
+
+}
+
+.services .box-container .box img{
+  height:7rem;
+}
+
+.services .box-container .box h3{
+  color:var(--white);
+  font-size: 1.7rem;
+  padding-top: 0rem;
+}
+.home-packages{
+  background: aliceblue;
+}
+
+.home-packages .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.home-packages .box-container .box{
+  border:var(--border);
+  box-shadow: var(--box-shadow);
+  background: var(--white);
+}
+
+.home-packages .box-container .box:hover .image img{
+  transform: scale(1.1);
+}
+
+.home-packages .box-container .box .image{
+  height: 25rem;
+  overflow: hidden;
+}
+
+.home-packages .box-container .box .image img{
+  height: 100%;
+  width: 95%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+.home-packages .box-container .box .image img:hover{
+
+  box-shadow:15px 15px 10px 15px rgb(56, 47, 47);
+
+}
+
+.home-packages .box-container .box .content{
+  padding:2rem;
+  text-align: center;
+}
+
+.home-packages .box-container .box .content h3{
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+.home-packages .box-container .box .content p{
+  font-size: 1.5rem;
+  color:rgb(45, 72, 72);
+  line-height: 2;
+  padding:1rem 0;
+}
+a.click{
+  font-size: 25px;
+    background-color: rgb(161, 221, 201);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a.click:hover{
+  background-color: rgb(244, 111, 111);
+  box-shadow:5px 5px 10px 5px rgb(56, 47, 47);
+
+}
+
+
+
+
+
+.footer{
+  background: url(../images/footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem;
+}
+
+.footer .box-container .box h3{
+  color:var(--white);
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer .box-container .box a{
+  color:var(--light-white);
+  font-size: 1.0rem;
+  padding-bottom: 1.5rem;
+  display: block;
+}
+
+.footer .box-container .box a i{
+  color:rgb(153, 218, 249) ;
+  padding-right: .5rem;
+  transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i{
+  padding-right: 2rem;
+}
+
+.places{
+  background-color: aliceblue;
+  width: 1200px;
+  font-size: larger;
+  gap:300px;
+
+}
+.culture{
+  
+  background-color: aliceblue;
+  width: 1200px;
+  font-size: larger;
+  gap:300px;
+
+
+}
+
+
+.packages{
+  background: aliceblue;
+}
+
+.packages .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.packages .box-container .box{
+  border:var(--border);
+  box-shadow: var(--box-shadow);
+  background: var(--white);
+}
+
+.packages .box-container .box:hover .image img{
+  transform: scale(1.1);
+}
+
+.home-packages .box-container .box .image{
+  height: 25rem;
+  overflow: hidden;
+}
+
+.packages .box-container .box .image img{
+  height: 100%;
+  width: 95%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+.packages .box-container .box .image img:hover{
+
+  box-shadow:15px 15px 10px 15px rgb(56, 47, 47);
+
+}
+
+.packages .box-container .box .content{
+  padding:2rem;
+  text-align: center;
+}
+
+.packages .box-container .box .content h3{
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+.packages .box-container .box .content p{
+  font-size: 1.5rem;
+  color:rgb(45, 72, 72);
+  line-height: 2;
+  padding:1rem 0;
+}
+a.btn{
+  font-size: 25px;
+    background-color: rgb(161, 221, 201);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a.btn:hover{
+  background-color: rgb(244, 111, 111);
+  box-shadow:5px 5px 10px 5px rgb(56, 47, 47);
+
+}
